@@ -4,12 +4,12 @@ class BookItem extends React.Component {
     render() {
         return (
             <tr>
-                <td>{this.props.book.id}</td>
+                <td>{this.props.index + 1}</td>
                 <td>{this.props.book.title}</td>
                 <td>{this.props.book.author}</td>
                 <td>{this.props.book.pages}</td>
                 <td>
-                    <button onClick={() => this.props.toggleReadStatus(this.props.book.id)}>
+                    <button onClick={() => this.props.toggleReadStatus(this.props.index)}>
                         {
                             this.props.book.readStatus ? 
                             <img src="/icons/toggle-on.png" alt="read"/> : 
@@ -18,12 +18,12 @@ class BookItem extends React.Component {
                     </button>
                 </td>
                 <td>
-                    <button onClick={() => this.props.deleteBookItem(this.props.book.id)}>
+                    <button onClick={() => this.props.deleteBookItem(this.props.index)}>
                         <img src="/icons/delete.png" alt="delete"/>
                     </button>
                 </td>
             </tr>
-        )
+        );
     }
 }
 

@@ -6,10 +6,10 @@ class Header extends React.Component {
             <header>
                 <div className="container">
                     <h1>Your Library</h1>
-                    <button>Add New Book</button>
+                    <button onClick={() => this.props.showForm()}>Add New Book</button>
                 </div>
             </header>
-        )
+        );
     }
 }
 

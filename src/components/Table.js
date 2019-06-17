@@ -8,10 +8,14 @@ class Table extends React.Component {
             <div className="table-container">
                 <table>
                     <TableHead />
-                    <TableBody />
+                    <TableBody 
+                    books={this.props.books}
+                    deleteBookItem={this.props.deleteBookItem}
+                    toggleReadStatus={this.props.toggleReadStatus}
+                    />
                 </table>
             </div>
-        )
+        );
     }
 }
 

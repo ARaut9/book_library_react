@@ -93,3 +93,51 @@ th:nth-child(5), td:nth-child(5) {
 th:last-child, td:last-child {
   flex: 1;
 }
+
+/* Form */
+
+#form-container {
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #8e8e8e;
+  padding: 30px;
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  left: 25%;
+  z-index: 999;
+}
+
+#form-container #cancel-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #fff url("/icons/cancel.png") no-repeat center center;
+  background-size: 100%;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+form [type="text"], form [type="number"], form [type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #ccc;
+}
+
+form [type="text"], form [type="number"], form div {
+  margin-bottom: 30px;
+}
+
+form label {
+  color: #8e8e8e;
+}
+
+form [type="submit"] {
+  background-color: #008000;
+  color: #fff;
+  cursor: pointer;
+}
