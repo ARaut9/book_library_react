@@ -9,6 +9,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+  background-color: transparent;
+}
+
 /* Header */
 
 header {
@@ -113,11 +117,13 @@ th:last-child, td:last-child {
   width: 30px;
   height: 30px;
   border: none;
-  background: #fff url("/icons/cancel.png") no-repeat center center;
-  background-size: 100%;
   position: absolute;
   top: -15px;
   right: -15px;
+}
+
+#cancel-btn img {
+  width: 100%;
 }
 
 form [type="text"], form [type="number"], form [type="submit"] {

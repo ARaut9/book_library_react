@@ -1,4 +1,7 @@
 import React from 'react';
+import toggleOnIcon from '../images/icons/toggle-on.png';
+import toggleOffIcon from '../images/icons/toggle-off.png';
+import deleteIcon from '../images/icons/delete.png';
 
 function BookItem(props) {
     return (
@@ -11,14 +14,14 @@ function BookItem(props) {
                 <button onClick={() => props.toggleReadStatus(props.index)}>
                     {
                         props.book.readStatus ? 
-                        <img src="/icons/toggle-on.png" alt="read"/> : 
-                        <img src="/icons/toggle-off.png" alt="not read"/>
+                        <img src={toggleOnIcon} alt="read"/> : 
+                        <img src={toggleOffIcon} alt="not read"/>
                     }
                 </button>
             </td>
             <td>
                 <button onClick={() => props.deleteBookItem(props.index)}>
-                    <img src="/icons/delete.png" alt="delete"/>
+                    <img src={deleteIcon} alt="delete"/>
                 </button>
             </td>
         </tr> 

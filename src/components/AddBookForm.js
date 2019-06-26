@@ -1,10 +1,13 @@
 import React from 'react';
+import cancelIcon from '../images/icons/cancel.png';
 
 function AddBookForm(props) {
     return (
         <div id="form-container">
             <div>
-                <button id="cancel-btn" onClick={props.hideForm}></button>
+                <button id="cancel-btn" onClick={props.hideForm}>
+                    <img src={cancelIcon} alt="cancel"/>
+                </button>
             </div>
 
             <form id="add-book-form" onSubmit={props.addNewBook} >
